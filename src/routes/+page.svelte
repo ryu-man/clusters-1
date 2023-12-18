@@ -33,34 +33,37 @@
 	}
 </script>
 
-<div class="w-full h-full overflow-hidden flex flex-col items-center justify-center">
+<div
+	class="w-full h-full overflow-hidden flex flex-col items-center justify-center dark:bg-neutral-950"
+>
 	<!-- This is the component container -->
-	<div class="flex flex-col px-32">
+	<div class="flex flex-col px-32 text-black dark:text-white">
 		<div class="mb-14">
 			<svelte:component this={components[status].component} {...components[status].props} />
 		</div>
 
 		<div
-			class="flex items-center gap-20 bg-neutral-100 border border-neutral-200 rounded-2xl py-5 px-8 relative"
+			class="flex items-center gap-20 text-black bg-neutral-100 border border-neutral-200 rounded-2xl py-5 px-8 relative dark:text-white dark:bg-neutral-900 dark:border-neutral-800"
 		>
 			<div class="flex flex-col">
 				<h5 class="text-large-bold mb-1">Refer your friends</h5>
-				<p class="text-black opacity-50 font-medium">
+				<p class="opacity-50 font-medium">
 					Earn money for inviting others to create their <br class="hidden xl:block" /> cluster, and
 					prepare them for a multichain world
 				</p>
 			</div>
 
 			<div
-				class="flex bg-black bg-opacity-5 rounded-lg overflow-hidden h-fit min-w-fit relative z-10 backdrop-blur-xl"
+				class="flex bg-black bg-opacity-5 rounded-lg overflow-hidden h-fit min-w-fit relative z-10 backdrop-blur-xl dark:bg-white dark:bg-opacity-10"
 			>
 				<div class="px-4 py-2.5 whitespace-nowrap flex">
-					<span class="text-black text-opacity-50">https://</span>
+					<span class="opacity-50">https://</span>
 					{url}
 				</div>
 
-				<button class="bg-black text-white font-medium p-2.5 rounded-lg min-w-min" on:click={onShare}
-					>Share</button
+				<button
+					class="bg-black text-white font-medium p-2.5 rounded-lg min-w-min dark:bg-white dark:text-black"
+					on:click={onShare}>Share</button
 				>
 			</div>
 

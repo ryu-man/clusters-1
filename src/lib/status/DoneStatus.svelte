@@ -2,7 +2,9 @@
 </script>
 
 <div class="flex flex-col items-center">
-	<div class="w-56 h-56 bg-black rounded-2xl"></div>
+	<div
+		class="box w-56 h-56 bg-black rounded-2xl border-black border-opacity-10 border-2 dark:border-white dark:border-opacity-10"
+	></div>
 
 	<div class="mt-5" />
 
@@ -15,13 +17,13 @@
 
 	<div class="mt-7 flex items-center gap-4">
 		<button
-			class="bg-black text-white px-4 py-2.5 rounded-lg border border-[#404040] text-base flex items-center gap-2"
+			class="bg-black text-white px-4 py-2.5 rounded-lg border border-[#404040] text-base flex items-center gap-2 dark:bg-white dark:text-black dark:border-neutral-700"
 		>
 			Download
 		</button>
 
 		<button
-			class="bg-white px-4 py-2.5 rounded-lg border border-neutral-400 text-base flex items-center gap-2"
+			class="px-4 py-2.5 rounded-lg border border-neutral-400 text-base flex items-center gap-2 dark:border-neutral-700"
 		>
 			Copy
 		</button>
@@ -29,7 +31,7 @@
 		<span class="opacity-50">and</span>
 
 		<button
-			class="bg-[#1D9BF0] text-white px-4 py-2.5 rounded-lg border border-neutral-300 text-base flex items-center gap-2"
+			class="bg-[#1D9BF0] text-white px-4 py-2.5 rounded-lg border border-neutral-300 text-base flex items-center gap-2 dark:border-neutral-700"
 		>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -48,3 +50,15 @@
 		</button>
 	</div>
 </div>
+
+<style>
+	.box {
+		box-shadow: 0px 4px 164px 0px rgba(0, 0, 0, 0.4);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.box {
+			box-shadow: 0px 4px 164px 0px rgba(255, 255, 255, 0.25);
+		}
+	}
+</style>

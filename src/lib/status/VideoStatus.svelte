@@ -55,7 +55,23 @@
 		@apply absolute inset-0;
 
 		content: '';
-		background: linear-gradient(180deg, theme('colors.neutral.200') 0%, #fafafa 72%, rgba(250, 250, 250, 0) 100%);
-        border-radius: inherit;
+		background: linear-gradient(
+			180deg,
+			theme('colors.neutral.200') 0%,
+			theme('colors.neutral.200') 28%,
+			rgba(250, 250, 250, 0) 100%
+		);
+		border-radius: inherit;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.bg-gradient:after {
+			background: linear-gradient(
+				180deg,
+				theme('colors.neutral.700') 0%,
+				theme('colors.neutral.700') 28%,
+				rgba(255, 255, 255, 0) 100%
+			);
+		}
 	}
 </style>

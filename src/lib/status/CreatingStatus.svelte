@@ -32,19 +32,21 @@
 
 	<div class="flex flex-col items-center gap-2">
 		<div class="text-[41.5px] font-bold">
-			<span class="text-black text-opacity-60">Creating</span>
+			<span class="opacity-60">Creating</span>
 			<span class="inline-flex">
 				<span>{name}</span>
 				<span>/</span>
 			</span>
 		</div>
-		<p class="opacity-50 font-medium text-center">
+		<p class="opacity-50 font-medium text-lg text-center">
 			This is an onchain transaction that will <br /> take a few minutes to complete.
 		</p>
 	</div>
 
 	<div class="mt-5">
-		<button class="bg-white px-4 py-3 rounded-lg border border-neutral-300 text-base">
+		<button
+			class="px-4 py-3 rounded-lg border border-neutral-300 text-base dark:border-neutral-700"
+		>
 			View transaction
 		</button>
 	</div>
