@@ -54,7 +54,7 @@
 			</div>
 
 			<div
-				class="flex flex-col lg:flex-row gap-2.5 bg-opacity-0 bg-black lg:bg-opacity-5 rounded-lg lg:overflow-hidden h-fit min-w-fit relative z-10 backdrop-blur-xl w-full lg:w-fit dark:bg-white dark:lg:bg-opacity-10"
+				class="flex flex-col lg:flex-row gap-2.5 bg-opacity-0 bg-black lg:bg-opacity-5 rounded-lg lg:overflow-hidden h-fit min-w-fit relative z-10 backdrop-blur-xl w-full lg:w-fit dark:bg-white dark:bg-opacity-0"
 			>
 				<div
 					class="pl-4 py-2.5 whitespace-nowrap flex bg-black bg-opacity-5 rounded-lg lg:rounded-r-none lg:bg-opacity-0 dark:bg-white dark:bg-opacity-10"
