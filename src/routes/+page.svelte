@@ -4,7 +4,7 @@
 
 	let name = 'ryeshrimp';
 
-	let status: 'creating' | 'video' | 'done' = 'creating';
+	let status: 'creating' | 'video' | 'done' = 'done';
 
 	const url = 'clusters.xyz/ryeshrimp';
 
@@ -69,7 +69,7 @@
 				>
 			</div>
 
-			<div class="absolute right-0 z-0">
+			<div class="absolute right-0 z-0 h-full">
 				<FadingCircles />
 			</div>
 		</div>

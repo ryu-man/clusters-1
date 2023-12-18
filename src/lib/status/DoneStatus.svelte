@@ -9,26 +9,34 @@
 	<div class="mt-5" />
 
 	<div class="flex flex-col items-center gap-2">
-		<div class="text-[41.5px] font-bold">Share with friends</div>
-		<p class="opacity-50 font-medium text-center">
+		<div class="text-3xl lg:text-[41.5px] font-bold text-center">Share with friends</div>
+		<p class="opacity-50 font-medium text-center text-medium">
 			Tell your friends about your new Cluster, <br /> and invite them to join.
 		</p>
 	</div>
 
-	<div class="mt-7 flex items-center gap-4">
-		<button
-			class="bg-black text-white px-4 py-2.5 rounded-lg border border-[#404040] text-base flex items-center gap-2 dark:bg-white dark:text-black dark:border-neutral-700"
-		>
-			Download
-		</button>
+	<div class="mt-7 flex flex-col lg:flex-row items-stretch justify-center gap-1.5 lg:gap-4">
+		<div class="flex gap-4">
+			<button
+				class="bg-black text-white px-4 py-2.5 rounded-lg border border-[#404040] text-base flex items-center gap-2 dark:bg-white dark:text-black dark:border-neutral-700"
+			>
+				Download
+			</button>
 
-		<button
-			class="px-4 py-2.5 rounded-lg border border-neutral-400 text-base flex items-center gap-2 dark:border-neutral-700"
-		>
-			Copy
-		</button>
+			<button
+				class="px-4 py-2.5 rounded-lg border border-neutral-400 text-base flex items-center gap-2 dark:border-neutral-700"
+			>
+				Copy
+			</button>
+		</div>
 
-		<span class="opacity-50">and</span>
+		<div class="text-center relative w-full flex items-center gap-2">
+			<div class="border-b border-black dark:border-white opacity-10 flex-1 lg:hidden" />
+
+			<span class="opacity-50 text-mini lg:text-small leading-3">and</span>
+
+			<div class="border-b border-black dark:border-white opacity-10 flex-1 lg:hidden" />
+		</div>
 
 		<button
 			class="bg-[#1D9BF0] text-white px-4 py-2.5 rounded-lg border border-neutral-300 text-base flex items-center gap-2 dark:border-neutral-700"
@@ -46,7 +54,8 @@
 				/>
 			</svg>
 
-			Share
+			<span>Share</span>
+			<span class="lg:hidden">on Twitter</span>
 		</button>
 	</div>
 </div>

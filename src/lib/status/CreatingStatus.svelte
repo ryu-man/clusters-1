@@ -39,7 +39,7 @@
 			</span>
 		</div>
 
-		<p class="opacity-50 font-medium text-lg text-center">
+		<p class="opacity-50 font-medium text-medium text-center">
 			This is an onchain transaction that will <br /> take a few minutes to complete.
 		</p>
 	</div>

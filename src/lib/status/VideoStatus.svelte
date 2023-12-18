@@ -38,8 +38,8 @@
 	<div class="mt-5" />
 
 	<div class="flex flex-col items-center gap-2">
-		<div class="text-[41.5px] font-bold">Creating your video</div>
-		<p class="opacity-50 font-medium text-center">
+		<div class="text-[41.5px] font-bold text-center">Creating your video</div>
+		<p class="opacity-50 font-medium text-center text-medium">
 			We are creating a personalized .gif of <br /> your new Cluster, which you can <br /> share with
 			your friends.
 		</p>

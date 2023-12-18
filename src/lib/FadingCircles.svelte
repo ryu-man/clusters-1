@@ -1,8 +1,6 @@
 <svg
 	xmlns="http://www.w3.org/2000/svg"
-	class="hidden lg:block text-black dark:text-white"
-	width="264"
-	height="112"
+	class="hidden lg:block text-black dark:text-white h-full w-fit"
 	viewBox="0 0 264 112"
 	fill="none"
 >
