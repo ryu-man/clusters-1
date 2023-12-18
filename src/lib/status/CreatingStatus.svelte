@@ -31,7 +31,7 @@
 	<div class="mt-5" />
 
 	<div class="flex flex-col items-center gap-5 lg:gap-2">
-		<div class="text-3xl lg:text-[41.5px] font-bold whitespace-nowrap">
+		<div class="text-3xl lg:text-[41.5px] lg:leading-[130%] font-bold whitespace-nowrap">
 			<span class="opacity-60">Creating</span>
 			<span class="inline-flex">
 				<span>{name}</span>
