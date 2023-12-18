@@ -37,13 +37,13 @@
 	class="w-full h-full overflow-hidden flex flex-col items-center justify-center dark:bg-neutral-950"
 >
 	<!-- This is the component container -->
-	<div class="flex flex-col px-32 text-black dark:text-white">
+	<div class="flex flex-col px-7 w-full max-w-4xl text-black dark:text-white">
 		<div class="mb-14">
 			<svelte:component this={components[status].component} {...components[status].props} />
 		</div>
 
 		<div
-			class="flex items-center gap-20 text-black bg-neutral-100 border border-neutral-200 rounded-2xl py-5 px-8 relative dark:text-white dark:bg-neutral-900 dark:border-neutral-800"
+			class="flex flex-col lg:flex-row items-center lg:justify-between gap-6 lg:gap-16 text-black bg-neutral-100 border border-neutral-200 rounded-2xl py-5 px-6 lg:px-8 relative dark:text-white dark:bg-neutral-900 dark:border-neutral-800"
 		>
 			<div class="flex flex-col">
 				<h5 class="text-large-bold mb-1">Refer your friends</h5>
@@ -54,9 +54,11 @@
 			</div>
 
 			<div
-				class="flex bg-black bg-opacity-5 rounded-lg overflow-hidden h-fit min-w-fit relative z-10 backdrop-blur-xl dark:bg-white dark:bg-opacity-10"
+				class="flex flex-col lg:flex-row gap-2.5 bg-opacity-0 bg-black lg:bg-opacity-5 rounded-lg lg:overflow-hidden h-fit min-w-fit relative z-10 backdrop-blur-xl w-full lg:w-fit dark:bg-white dark:lg:bg-opacity-10"
 			>
-				<div class="px-4 py-2.5 whitespace-nowrap flex">
+				<div
+					class="pl-4 py-2.5 whitespace-nowrap flex bg-black bg-opacity-5 rounded-lg lg:rounded-r-none lg:bg-opacity-0 dark:bg-white dark:bg-opacity-10"
+				>
 					<span class="opacity-50">https://</span>
 					{url}
 				</div>

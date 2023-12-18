@@ -30,14 +30,15 @@
 
 	<div class="mt-5" />
 
-	<div class="flex flex-col items-center gap-2">
-		<div class="text-[41.5px] font-bold">
+	<div class="flex flex-col items-center gap-5 lg:gap-2">
+		<div class="text-3xl lg:text-[41.5px] font-bold whitespace-nowrap">
 			<span class="opacity-60">Creating</span>
 			<span class="inline-flex">
 				<span>{name}</span>
 				<span>/</span>
 			</span>
 		</div>
+
 		<p class="opacity-50 font-medium text-lg text-center">
 			This is an onchain transaction that will <br /> take a few minutes to complete.
 		</p>
