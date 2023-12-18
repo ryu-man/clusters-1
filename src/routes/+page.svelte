@@ -4,7 +4,7 @@
 
 	let name = 'ryeshrimp';
 
-	let status: 'creating' | 'video' | 'done' = 'done';
+	let status: 'creating' | 'video' | 'done' = 'creating';
 
 	const url = 'clusters.xyz/ryeshrimp';
 
