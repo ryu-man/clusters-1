@@ -41,7 +41,7 @@
 		</div>
 
 		<button
-			class="bg-[#1D9BF0] text-white px-4 py-2.5 rounded-lg border border-neutral-300 text-base flex items-center gap-2 dark:border-neutral-700"
+			class="bg-[#1D9BF0] text-white px-4 py-2.5 rounded-lg border border-[#1D9BF0] text-base flex items-center gap-2 dark:border-neutral-700"
 		>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
