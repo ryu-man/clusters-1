@@ -9,7 +9,7 @@
 	<div class="mt-5" />
 
 	<div class="flex flex-col items-center gap-2">
-		<div class="text-extra-bold lg:text-[41.5px] lg:leading-[130%] font-bold text-center">
+		<div class="text-extra-bold md:text-[41.5px] md:leading-[130%] font-bold text-center">
 			Share with friends
 		</div>
 		<p class="opacity-50 font-medium text-center text-medium">
@@ -17,7 +17,7 @@
 		</p>
 	</div>
 
-	<div class="mt-7 flex flex-col lg:flex-row items-stretch justify-center gap-1.5 lg:gap-4">
+	<div class="mt-7 flex flex-col md:flex-row items-stretch justify-center gap-1.5 md:gap-4">
 		<div class="flex gap-4">
 			<button
 				class="bg-black text-white px-4 py-2.5 rounded-lg border border-[#404040] text-base flex items-center gap-2 dark:bg-white dark:text-black dark:border-neutral-700"
@@ -33,11 +33,11 @@
 		</div>
 
 		<div class="text-center relative w-full flex items-center gap-2">
-			<div class="border-b border-black dark:border-white opacity-10 flex-1 lg:hidden" />
+			<div class="border-b border-black dark:border-white opacity-10 flex-1 md:hidden" />
 
-			<span class="opacity-50 text-mini lg:text-small leading-3">and</span>
+			<span class="opacity-50 text-mini md:text-small leading-3">and</span>
 
-			<div class="border-b border-black dark:border-white opacity-10 flex-1 lg:hidden" />
+			<div class="border-b border-black dark:border-white opacity-10 flex-1 md:hidden" />
 		</div>
 
 		<button
@@ -57,7 +57,7 @@
 			</svg>
 
 			<span>Share</span>
-			<span class="lg:hidden">on Twitter</span>
+			<span class="md:hidden">on Twitter</span>
 		</button>
 	</div>
 </div>

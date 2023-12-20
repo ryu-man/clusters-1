@@ -4,7 +4,7 @@
 
 	let name = 'ryeshrimp';
 
-	let status: 'creating' | 'video' | 'done' = 'creating';
+	let status: 'creating' | 'video' | 'done' = 'video';
 
 	const url = 'clusters.xyz/ryeshrimp';
 
@@ -43,7 +43,7 @@
 		</div>
 
 		<div
-			class="flex flex-col lg:flex-row items-center lg:justify-between gap-6 lg:gap-16 text-black bg-neutral-100 border border-neutral-200 rounded-2xl py-5 px-6 lg:px-8 relative dark:text-white dark:bg-neutral-900 dark:border-neutral-800"
+			class="flex flex-col md:flex-row items-center md:justify-between gap-6 md:gap-16 text-black bg-neutral-100 border border-neutral-200 rounded-2xl py-5 px-6 md:px-8 relative dark:text-white dark:bg-neutral-900 dark:border-neutral-800"
 		>
 			<div class="flex flex-col">
 				<h5 class="text-large-bold mb-1">Refer your friends</h5>
@@ -54,10 +54,10 @@
 			</div>
 
 			<div
-				class="flex flex-col lg:flex-row gap-2.5 bg-opacity-0 bg-black lg:bg-opacity-5 rounded-lg lg:overflow-hidden h-fit min-w-fit relative z-10 backdrop-blur-xl w-full lg:w-fit dark:bg-white dark:bg-opacity-0"
+				class="flex flex-col md:flex-row gap-2.5 bg-opacity-0 bg-black md:bg-opacity-5 rounded-lg md:overflow-hidden h-fit min-w-fit relative z-10 backdrop-blur-xl w-full md:w-fit dark:bg-white dark:bg-opacity-0"
 			>
 				<div
-					class="pl-4 py-2.5 whitespace-nowrap flex bg-black bg-opacity-5 rounded-lg lg:rounded-r-none lg:bg-opacity-0 dark:bg-white dark:bg-opacity-10"
+					class="pl-4 py-2.5 whitespace-nowrap flex bg-black bg-opacity-5 rounded-lg md:rounded-r-none md:bg-opacity-0 dark:bg-white dark:bg-opacity-10"
 				>
 					<span class="opacity-50">https://</span>
 					{url}
