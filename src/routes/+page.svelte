@@ -6,27 +6,9 @@
 
 	let status: 'creating' | 'video' | 'done' = 'video';
 
-	const url = 'clusters.xyz/ryeshrimp';
+	let progress = 0.65;
 
-	const components: Record<
-		string,
-		{ component: ConstructorOfATypedSvelteComponent; props: Record<string, any> }
-	> = {
-		creating: {
-			component: CreatingStatus,
-			props: {
-				name
-			}
-		},
-		video: {
-			component: VideoStatus,
-			props: {}
-		},
-		done: {
-			component: DoneStatus,
-			props: {}
-		}
-	};
+	const url = 'clusters.xyz/ryeshrimp';
 
 	function onShare() {
 		navigator.clipboard.writeText(url);
@@ -39,7 +21,15 @@
 	<!-- This is the component container -->
 	<div class="flex flex-col px-7 w-full max-w-4xl text-black dark:text-white">
 		<div class="mb-14">
-			<svelte:component this={components[status].component} {...components[status].props} />
+			{#if status === 'creating'}
+				<CreatingStatus {name} />
+			{/if}
+			{#if status === 'video'}
+				<VideoStatus {progress} />
+			{/if}
+			{#if status === 'done'}
+				<DoneStatus />
+			{/if}
 		</div>
 
 		<div
