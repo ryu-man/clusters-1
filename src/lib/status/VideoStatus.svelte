@@ -1,5 +1,5 @@
 <script lang="ts">
-	import VidepProgress from './VidepProgress.svelte';
+	import VidepProgress from './VideoProgress.svelte';
 
 	export let progress = 0;
 	export let duration = 1000 * (60 + 40); // 1 minute and 40 seconds
