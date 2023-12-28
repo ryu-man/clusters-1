@@ -2,10 +2,11 @@
 	import VidepProgress from './VidepProgress.svelte';
 
 	export let progress = 0;
+	export let duration = 1000 * (60 + 40); // 1 minute and 40 seconds
 </script>
 
 <div class="flex flex-col items-center">
-	<VidepProgress value={progress} />
+	<VidepProgress value={progress} {duration} />
 
 	<div class="mt-5" />
 

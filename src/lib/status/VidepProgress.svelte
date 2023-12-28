@@ -1,19 +1,20 @@
 <script lang="ts">
-	import { expoOut } from 'svelte/easing';
+	import { linear } from 'svelte/easing';
 	import { tweened } from 'svelte/motion';
 
 	export let value = 0;
+	export let duration = 1000 * (60 + 40); // 1 minute and 40 seconds
 
-	const width$ = tweened(value, { easing: expoOut });
-
-	$: width$.set(value * 100, {
+	const width$ = tweened(value, {
+		easing: linear,
 		duration(from, to) {
-			const maxDuration = 1000 * 60 * 1.5; // 1:30 minutes
 			const diff = Math.abs(to - from);
 
-			return (diff / 100) * maxDuration;
+			return diff * duration;
 		}
 	});
+
+	$: width$.set(value);
 </script>
 
 <div
@@ -24,10 +25,10 @@
 	>
 		<div
 			class="progress-bar absolute left-0 top-0 h-full bg-[#627EEA] z-[-1]"
-			style:width="{$width$}%"
+			style:width="{$width$ * 100}%"
 		/>
 
-		<div class="text-5xl font-bold max-w-full">{$width$.toFixed()} <span>%</span></div>
+		<div class="text-5xl font-bold max-w-full">{($width$ * 100).toFixed()} <span>%</span></div>
 
 		<div class="text-lg font-medium opacity-50">complete</div>
 	</div>

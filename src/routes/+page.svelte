@@ -6,7 +6,8 @@
 
 	let status: 'creating' | 'video' | 'done' = 'video';
 
-	let progress = 0.65;
+	let progress = 0;
+	let duration = 1000 * (60 + 40); // 1 minute and 40 seconds
 
 	const url = 'clusters.xyz/ryeshrimp';
 
@@ -25,7 +26,7 @@
 				<CreatingStatus {name} />
 			{/if}
 			{#if status === 'video'}
-				<VideoStatus {progress} />
+				<VideoStatus {progress} {duration} />
 			{/if}
 			{#if status === 'done'}
 				<DoneStatus />
