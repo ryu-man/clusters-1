@@ -34,7 +34,7 @@
 		</div>
 
 		<div
-			class="flex flex-col md:flex-row items-center md:justify-between gap-6 md:gap-16 text-black bg-neutral-100 border border-neutral-200 rounded-2xl py-5 px-6 md:px-8 relative dark:text-white dark:bg-neutral-900 dark:border-neutral-800"
+			class="flex flex-col md:flex-row items-center md:justify-between gap-6 md:gap-16 text-black bg-neutral-100 border border-neutral-200 rounded-2xl py-5 px-6 md:px-8 relative dark:text-white dark:bg-neutral-900 dark:border-neutral-800 overflow-hidden"
 		>
 			<div class="flex flex-col">
 				<h5 class="text-large-bold mb-1">Refer your friends</h5>
@@ -60,7 +60,7 @@
 				>
 			</div>
 
-			<div class="absolute right-0 z-0 h-full">
+			<div class="absolute right-0 top-0 z-0 h-full overflow-hidden">
 				<FadingCircles />
 			</div>
 		</div>
